@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<meta charset="utf-8">
+<title>Lonely chatroom</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div ng-controller="container">
+<div id="largebox">
+    <div id="myflexbox">
+        <div id="messages">
+            Välkommen till chatten {{username}}<br>
+            <div ng-repeat="message in messages">
+                <span class="username">{{message.username}}</span> <span class="timestamp">{{message.timestamp}}</span><br>
+                <span class="message-content" ng-bind-html="message.text"></span>
+            </div>
+        </div>
+        <div id="text-container">
+            <div contenteditable ng-bind="text" id="text" autofocus ng-model="messagecontent">ahbhvhvhvv</div>
+        </div>
+        <p>Användarnamn:</p>
+        <input ng-model="username" id="username"><br>
+        <button ng-click="getChatbotGreeting()">Prata med chatbot</button>
+    </div>
+    <div id="userlist">
+        <h2>ShutApp</h2>
+        <ul>
+            <li>Anna</li>
+            <li>Mohammed</li>
+            <li>Jon</li>
+            <li>Åsa</li>
+            <li>Tobbe</li>
+            <li>Lisa</li>
+            <li>Abcdähej</li>
+        </ul>
+    </div>
+</div>
+</div>
+
+<script src="bower_components/angular/angular.js"></script>
+<script src="node_modules/angular-sanitize/angular-sanitize.js"></script>
+<script src="ngscript.js"></script>
+
+</body>
+</html>

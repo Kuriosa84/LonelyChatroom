@@ -1,0 +1,13 @@
+{
+  "name": "LonelyChatroom",
+  "authors": [
+    "Asa"
+  ],
+  "description": "",
+  "main": "chatroom.html",
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "angular": "^1.6.4"
+  }
+}
